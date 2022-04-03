@@ -1,0 +1,23 @@
+<h1>Calcular interés simple</h1>
+
+<form action="/" method="POST">
+  <input
+    name="tasa"
+    step="0.01"
+    type="number"
+    placeholder="Tasa de Interés"
+    value="{{tasa}}"
+  />
+  <input
+    name="capital"
+    type="number"
+    placeholder="Capital"
+    value="{{capital}}"
+  />
+  <input name="anios" type="number" placeholder="Años" value="{{anios}}" />
+  <button type="submit">Submit</button>
+</form>
+
+{{#if total}}
+  <p>El interés compuesto calculado es de: {{total}}</p>
+{{/if}}
